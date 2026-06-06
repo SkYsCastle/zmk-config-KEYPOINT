@@ -187,7 +187,8 @@
                 #binding-cells = <0>;
                 tapping-term-ms = <150>;
                 bindings = <&lt 7 ESC>, <&mo 6>;
- // hold, tap, double_tap
+
+                // hold, tap, double_tap
             };
 
             lt_nav: nav_layer_tap {
@@ -203,7 +204,8 @@
                 #binding-cells = <0>;
                 tapping-term-ms = <110>;
                 bindings = <&lt_nav 2 SPACE>, <&kp SPACE>;
- // hold, tap, double_tap
+
+                // hold, tap, double_tap
             };
 
             mo_clk: mo_click {
@@ -220,7 +222,8 @@
                 #binding-cells = <0>;
                 tapping-term-ms = <170>;
                 bindings = <&mo_clk 3 LCLK>, <&mkp LCLK>;
- // hold, tap, double_tap
+
+                // hold, tap, double_tap
             };
 
             mo_kp: mo_kp {
@@ -237,7 +240,8 @@
                 #binding-cells = <0>;
                 tapping-term-ms = <170>;
                 bindings = <&mo_kp 1 BACKSPACE>, <&kp BACKSPACE>;
- // hold, tap, double_tap
+
+                // hold, tap, double_tap
             };
 
             httl: ht_two_layers {
@@ -253,7 +257,8 @@
                 compatible = "zmk,behavior-tap-dance";
                 #binding-cells = <0>;
                 bindings = <&to 0>, <&to 4>;
- // tap, double_tap
+
+                // tap, double_tap
             };
 
             td_clk_scrl: td_click_or_scroll {
@@ -261,7 +266,8 @@
                 #binding-cells = <0>;
                 tapping-term-ms = <250>;
                 bindings = <&mkp RCLK>, <&mo 8>;
-  // tap/hold, double_tap
+
+                // tap/hold, double_tap
             };
 
             td_bore: BASE_or_EXTRA {
@@ -328,20 +334,20 @@
         SYM {
             display-name = "sym";
             bindings = <
-&kp TILDE  &kp AT     &kp AMPS    &kp F13      &kp F14      &kp AMPS    &kp PLUS      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp AMPS    &kp PRCNT  &kp BSLH
-&kp GRAVE  &kp UNDER  &kp LS(N6)  &kp F15      &kp F16      &kp BSPC    &none   &none   &kp KP_MINUS  &kp LPAR          &kp RPAR           &kp LS(N6)  &kp UNDER  &kp PIPE
-&kp DLLR   &kp HASH   &kp CARET   &kp LT       &kp GT       &kp DEL   &none   &none   &none    &none    &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT      &kp STAR   &kp FSLH
-&kp LCTRL  &kp LGUI  &none     &none      &mo 2   &none   &none   &none   &none    &mo 2    &none    &none  &none  &none
+&kp TILDE  &kp AT     &kp AMPS    &kp F13  &kp F14  &kp AMPS  &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AMPS  &kp PRCNT  &kp BSLH
+&kp GRAVE  &kp UNDER  &kp LS(N6)  &kp F15  &kp F16  &kp BSPC  &none     &none           &kp KP_MINUS     &kp LPAR  &kp RPAR   &kp LS(N6)        &kp UNDER          &kp PIPE
+&kp DLLR   &kp HASH   &kp CARET   &kp LT   &kp GT   &kp DEL   &none     &none           &none            &none     &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT    &kp STAR  &kp FSLH
+&kp LCTRL  &kp LGUI   &none       &none    &mo 2    &none     &none     &none           &none            &mo 2     &none      &none             &none              &none
             >;
         };
 
         MOUSE_layer {
             display-name = "MOUSE";
             bindings = <
-&trans      &trans      &trans          &mmv MOVE_UP    &trans            &trans      &trans         &trans           &kp UP      &trans     &trans   &trans
-&trans   &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT  &kp BACKSPACE      &mkp LCLK       &mkp LCLK     &none         &kp LEFT_ARROW  &kp DOWN    &kp RIGHT_ARROW    &trans  &kp ENTER
-&trans  &kp LGUI   &kp LALT        &kp LSHFT   	 &kp LCTRL		  &kp DEL      &msc SCRL_DOWN  &msc SCRL_UP  &none      &none      &none         &kp HOME        &kp END     &kp PG_UP         &kp PG_DN  &none
-&kp LCTRL  &kp LGUI  &kp LALT  &none  &mo 2  &kp SPACE  &mo 1           &mkp LCLK     &mkp RCLK  &mkp MB3   &trans  &trans     &trans  &trans
+&trans     &trans    &trans          &mmv MOVE_UP    &trans           &trans         &trans          &trans        &kp UP     &trans          &trans    &trans
+&trans     &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp BACKSPACE  &mkp LCLK       &mkp LCLK     &trans     &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &trans   &kp ENTER
+&trans     &kp LGUI  &kp LALT        &kp LSHFT       &kp LCTRL        &kp DEL        &msc SCRL_DOWN  &msc SCRL_UP  &none      &none           &trans    &kp HOME         &kp END  &kp PG_UP  &kp PG_DN  &trans
+&kp LCTRL  &kp LGUI  &kp LALT        &trans          &trans           &trans         &trans          &mkp LCLK     &mkp RCLK  &mkp MB3        &trans    &trans           &trans   &trans
             >;
         };
 
