@@ -69,7 +69,7 @@ layers:
   - {t: '8', s: F8}
   - {t: '9', s: F9}
   - {t: KP SLASH, s: F10}
-  - KP PLUS
+  - +
   - CAPS
   - LCMD
   - LALT
@@ -78,7 +78,7 @@ layers:
   - BACKSPACE
   - '&mkp RCLK'
   - '&mkp RCLK'
-  - KP MINUS
+  - '-'
   - {t: '4', s: F4}
   - {t: '5', s: F5}
   - {t: '6', s: F6}
@@ -94,7 +94,7 @@ layers:
   - {t: ▽, type: trans}
   - '&bl BL_DEC'
   - '&bl BL_INC'
-  - KP EQUAL
+  - '='
   - {t: '1', s: F1}
   - {t: '2', s: F2}
   - {t: '3', s: F3}
