@@ -199,7 +199,7 @@
                 bindings = <&mo>, <&kp>;
             };
 
-            td_space_sym: td_space {
+            td_space_sym: td_space_sym {
                 compatible = "zmk,behavior-tap-dance";
                 #binding-cells = <0>;
                 tapping-term-ms = <110>;
@@ -308,10 +308,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp C_AC_SEARCH  &kp Q            &kp W                &kp E             &kp R             &kp T      &kp Y          &kp U          &kp I           &kp O          &kp P       &kp BSPC
-&kp TAB          &ht_left LCMD A  &ht_left LEFT_ALT S  &ht_left LSHFT D  &ht_left LCTRL F  &kp G      &mkp LCLK      &mkp LCLK      &kp H           &kp J          &kp K       &kp L      &kp SEMI   &kp ENTER
-&kp LSHFT        &kp Z            &kp X                &kp C             &kp V             &kp B      &kp PG_DN      &kp PG_UP      &msc SCRL_DOWN  &msc SCRL_UP   &kp N       &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-&kp LCTRL        &kp LGUI         &kp LALT             &kp C_MUTE        &td_space_sym     &kp SPACE  &kp BACKSPACE  &kp BACKSPACE  &kp ENTER       &td_space_sym  &kp C_MUTE  &kp MINUS  &kp EQUAL  &kp GRAVE
+&kp C_AC_SEARCH  &kp Q            &kp W                &kp E             &kp R             &kp T      &kp Y      &kp U          &kp I           &kp O          &kp P       &kp BSPC
+&kp TAB          &ht_left LCMD A  &ht_left LEFT_ALT S  &ht_left LSHFT D  &ht_left LCTRL F  &kp G      &mkp LCLK  &mkp LCLK      &kp H           &kp J          &kp K       &kp L      &kp SEMI   &kp ENTER
+&kp LSHFT        &kp Z            &kp X                &kp C             &kp V             &kp B      &kp PG_DN  &kp PG_UP      &msc SCRL_DOWN  &msc SCRL_UP   &kp N       &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+&kp LCTRL        &kp LGUI         &kp LALT             &kp C_MUTE        &td_space_sym     &kp SPACE  &td_bs     &kp BACKSPACE  &td_space_sym   &td_space_sym  &kp C_MUTE  &kp MINUS  &kp EQUAL  &kp GRAVE
             >;
 
             sensor-bindings =
