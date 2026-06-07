@@ -21,7 +21,26 @@
 #define KEYS_R 6 7 8 9 10 11 6 7 8 9 10 11 20 21 22 23 24 25 36 37 38 39 40 41 52 53 54 55 // Right-hand keys.
 #define THUMBS 46 47 48 49 50 51 18 19 32 33 34 35  // Thumb keys.
 / {
-    behaviors {
+    combos {
+        compatible = "zmk,combos";
+        
+        combo_left_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <25 26>;
+        };
+        
+        combo_middle_click {
+            bindings = <&mkp MCLK>;
+            key-positions = <26 27>;
+        };
+
+        combo_right_click {
+            bindings = <&mkp RCLK>;
+            key-positions = <27 28>;
+        };
+    };
+
+behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -300,15 +319,6 @@
 
                 mods = <(MOD_LSFT | MOD_RSFT)>;
             };
-
-            new_behavior: new_behavior {
-                compatible = "zmk,behavior-tap-dance";
-                #binding-cells = <0>;
-                tapping-term-ms = <170>;
-                bindings = <&mo_clk 2 LCLK>, <&mkp LCLK>;
-
-                label = "NEW_BEHAVIOR";
-            };
         };
     };
 
@@ -319,8 +329,8 @@
             display-name = "QWERTY";
             bindings = <
 &kp C_AC_SEARCH  &kp Q            &kp W                &kp E             &kp R             &kp T    &kp Y       &kp U       &kp I           &kp O          &kp P       &kp BSPC
-&kp TAB          &ht_left LCMD A  &ht_left LEFT_ALT S  &ht_left LSHFT D  &ht_left LCTRL F  &kp G    &mkp LCLK   &mkp LCLK   &kp H           &kp J          &kp K       &kp L      &kp SEMI   &kp ENTER
-&kp LSHFT        &kp Z            &kp X                &kp C             &kp V             &kp B    &kp PG_DN   &kp PG_UP   &msc SCRL_DOWN  &msc SCRL_UP   &kp N       &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+&kp TAB          &ht_left LCMD A  &ht_left LEFT_ALT S  &ht_left LSHFT D  &ht_left LCTRL F  &kp G    &mkp LCLK   &mkp LCLK   &kp H           &ht_right RCTRL J          &ht_right RSHFT K       &ht_right RIGHT_ALT L      &ht_right RCMD SEMI   &kp ENTER
+&kp LSHFT        &kp Z            &kp X                &kp C             &kp V             &kp B    &kp PG_DN   &kp PG_UP   &msc SCRL_DOWN  &msc SCRL_UP   &kp N       &kp M      &kp COMMA  &kp DOT    &kp QMARK  &kp FSLH
 &kp LCTRL        &kp LGUI         &kp LALT             &kp CAPSLOCK      &td_esc_l3        &td_clk  &td_bs_num  &td_bs_num  &lt 2 KP_ENTER  &td_space_nav  &kp C_MUTE  &kp MINUS  &kp EQUAL  &kp GRAVE
             >;
 
