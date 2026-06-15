@@ -39,9 +39,9 @@ layers:
   - '&msc SCRL_UP'
   - N
   - M
-  - ','
-  - .
-  - '?'
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '?', s: '!'}
   - /
   - LCTRL
   - LGUI
@@ -65,9 +65,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '%'
-  - {t: '7', s: F7}
-  - {t: '8', s: F8}
-  - {t: '9', s: F9}
+  - {t: KP 7, s: F7}
+  - {t: KP 8, s: F8}
+  - {t: KP 9, s: F9}
   - {t: KP SLASH, s: F10}
   - +
   - CAPS
@@ -79,9 +79,9 @@ layers:
   - '&mkp RCLK'
   - '&mkp RCLK'
   - '-'
-  - {t: '4', s: F4}
-  - {t: '5', s: F5}
-  - {t: '6', s: F6}
+  - {t: KP 4, s: F4}
+  - {t: KP 5, s: F5}
+  - {t: KP 6, s: F6}
   - {t: KP MULTIPLY, s: F11}
   - '-'
   - LSHFT
@@ -95,9 +95,9 @@ layers:
   - '&bl BL_DEC'
   - '&bl BL_INC'
   - '='
-  - {t: '1', s: F1}
-  - {t: '2', s: F2}
-  - {t: '3', s: F3}
+  - {t: KP 1, s: F1}
+  - {t: KP 2, s: F2}
+  - {t: KP 3, s: F3}
   - {t: '0', s: F12}
   - KP ENTER
   - LCTRL
